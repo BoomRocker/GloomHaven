@@ -1,0 +1,367 @@
+body{
+	font-family: 'Pirata One', cursive;
+	margin:0;
+	padding: 0;
+	margin:0;
+	background: url("./images/bg-wood.jpg") left top repeat; 
+	text-align:center;
+}
+
+#holder{
+	display:inline-block !important;
+	background: url("./images/backer2.png") left top no-repeat; 
+	background-size: 400px;
+	width:360px;
+	height: 800px;
+	border:1px solid red;
+	padding:150px 0 0 40px;
+	margin:0;
+}
+
+.buff{
+	display:inline-block !important;
+	font-size:12px;
+	padding: 5px;
+	margin:5px;
+	font-weight:bold;
+	clear:both;
+}
+
+.btn {
+    display:inline-block !important;
+    font-size:35px;
+    width:50px;
+    height:50px;
+    line-height:35px;
+    text-align:center;
+    border-radius:35%;
+    border:0px;
+    float:left;
+    padding:0px;
+    margin:0px 5px 0px 5px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	outline: none;
+}
+
+.btn:active{
+	outline: auto;
+}
+
+.resolverBtn {
+	display:inline-block !important;
+    width:170px;
+	height:35px;
+	border-radius:5px;
+	font-size:18px;
+	text-align:center;
+	border:2px solid black;
+	float:left;
+	background-color:purple;
+	color:white;
+	margin:5px 5px 0 5px;
+	font-family: 'Pirata One', cursive;
+}
+
+.resolverBtn:active {
+	background:red;
+}
+
+#poisonHurts{
+	margin-left:15px;
+}
+
+#overview{
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+#resolver{
+	background:#efefef;
+	padding: 0 0 5px 0 ;
+}
+
+#woundDamage{
+	float:right;
+	background-image: url("./images/sprites.png");
+	background-repeat: no-repeat;
+	background-position: -160px 0px;
+	background-color:none;
+	width: 56px;
+    height: 56px;
+    display: table;
+	display:inline-block !important;
+    font-size:35px;
+	text-align:center;
+	padding: 7px 0 0 2px;
+	margin:0 10px 0 0;
+	color:#604729;
+	color:#93292e
+}
+
+#damageTotaler{
+	display:none!important;
+	color:blue;
+}
+
+#poisonDMGcount{
+	display:inline-block !important;
+	float:right;
+	opacity:1;
+	color:red;
+	border:1px solid red;
+	border-radius:35px;
+	text-align:center;
+	font-size:20px;
+	width:27px;
+	height:27px;
+	line-height:29px;
+	margin: 4px 0 0 8px;
+	opacity:0;
+}
+
+#attackDamage{
+    background:maroon;
+    color:crimson;
+    border:1px solid crimson;
+}
+
+#shieldDamage{
+    background:steelblue;
+    color:skyblue;
+    border:1px solid skyblue;
+}
+
+#wounder{
+	background: tan;
+	color:brown;
+	padding: 0 0 5px 0 ;
+}
+
+#attacker{
+  background: maroon;
+  color:crimson;
+	padding: 0 0 5px 0 ;
+}
+
+#shielder{
+  background: steelblue;
+  color:skyblue;
+	padding: 0 0 5px 0 ;
+}
+
+/*
+#poisonAdd, #poisonSubtract{
+    background:lightgreen;
+    color:green;
+    border:1px solid lightgreen; 
+}*/
+
+#attackAdd, #attackSubtract{
+    background:crimson;
+    color:maroon;
+    color:maroon;
+}
+#woundAdd, #woundSubtract{
+    background:tan;
+    color:darkbrown;
+    color:brown;
+}
+
+.deactivePoison{
+    background:green;
+    color:darkgreen;
+    border:1px solid green; 
+}
+
+.activePoison{
+    background:lightgreen;
+    color:green;
+    border:1px solid lightgreen; 
+}
+
+#shieldAdd, #shieldSubtract{
+    background:skyblue;
+    color:steelblue;
+    color:steelblue;
+}
+
+#resetAll{
+	display:inline-block !important;
+	float: left;
+	clear:none;
+	width: auto;
+	background:blue;
+	color: yellow;
+	height:40px;
+	font-size:15px;
+	border-radius:5px;
+	border: 2px solid yellow;
+	margin: 5px 0 0 10px ;
+	padding:0 10px;
+	font-family: 'Pirata One', cursive;
+}
+
+.blockyCount{
+    display:inline-block !important;
+    font-size:35px;
+    color:red;
+    line-height:50px;
+    text-align:center;
+    border-radius:50%;
+    float:left;
+    padding:0;
+    margin:0;
+	/*border:1px solid black;*/
+}
+
+.circleCount{
+    display:inline-block !important;
+    font-size:35px;
+    color:red;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    border-radius:50%;
+    float:left;
+    padding:0;
+    margin:0 10px 0 10px;
+	background:red;
+}
+
+p{
+  margin: 0 auto;
+  margin:0px;
+  padding: 0px;
+  width:175px;
+  text-align:center;
+}
+
+.widther{
+	display:inline-block !important;
+	width: 180px;
+	height: auto;
+	float:left;
+	padding:5px;
+	border-radius:10px;
+	float: left;
+	clear:both;
+	margin: 0 0 5px 0;
+	border:3px solid #333;
+}
+
+#poisonDamage{
+  font-size:30px;
+}
+
+.widther p{
+	margin:0 0 5px 0;
+}
+
+.labeler{
+	display:inline-block !important;
+	font-size:18px;
+	width:auto;
+	padding: 0px;
+	margin:5px 5px 0px 5px;
+	float:left;
+	clear:none;
+}
+
+#toggler{
+	display:inline-block !important;
+	width:auto;
+	padding:5px 0px 5px 10px;
+	margin:0px;
+	float:left;
+	clear:none;
+}
+
+#togglerWound{
+	display:inline-block !important;
+	width:auto;
+	padding:5px 0px 5px 0px;
+	margin:0px;
+	float:left;
+	clear:none;
+}
+
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	padding:0;
+	margin:0;
+	float:left;
+	clear:none;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #aaa;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.opac{
+  opacity:.5;	
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .2s;
+  transition: .2s;
+
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#poisonIcon{
+	font-size:35px;
+	margin:-7px 0 0 0;
+	padding:0px;
+	opacity:.5;
+}
