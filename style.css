@@ -11,10 +11,10 @@ body{
 	display:inline-block !important;
 	background: url("./images/backer2.png") left top no-repeat; 
 	background-size: 400px;
-	width:360px;
+	width:400px;
 	height: 800px;
 	border:1px solid red;
-	padding:150px 0 0 50px;
+	padding:150px 0 0 0;
 	margin:0;
 }
 
@@ -23,8 +23,6 @@ body{
 	width: 300px;
 	height: auto;
 	float:left;
-	padding:0;
-	border-radius:10px;
 	float: left;
 	clear:both;
 	margin: 0 0 5px 0;
@@ -156,6 +154,15 @@ body{
 }
 
 #shielder{
+}
+
+.divider{
+	display:inline-block !important;
+	height: 30px;
+    width: 75%;
+    background: url("./images/divider.png") no-repeat 50%;
+    clear: both;
+	background-color:none;
 }
 
 /*
