@@ -4,8 +4,9 @@
 	  <meta charset="UTF-8">
 	  <title>GloomHaven Battle Counter</title>
 	  
-	  <meta meta name="viewport" content= "width=device-width, user-scalable=no" /> 
-	  
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width,initial-scale=1.5,user-scalable=no">
+	
 	  <link rel="stylesheet" href="./style.css">
 		<style>
 		@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
@@ -16,66 +17,98 @@
 	<div id="holder">
 		<!--WOUND START -->
 		<div id="wounder" class="widther">
-		 <p>🔥 Wound KABOOM</p>
 		  <span id="togglerWound">
 				<form>
-				  <label for="woundActive" class="labeler" id="woundHurts"></label>
+					<p class="lefter">🔥 Wound</p>
+					<label for="woundActive" class="labeler" id="woundHurts"></label>
 				<!-- Rounded switch -->
 				<label class="switch">
 				  <input type="checkbox" id="woundSwitch">
 				  <span id="opacityW" class="slider round"></span>
 				</label>
+				<span id="woundDamage" class="damageCircle woundColor">.</span>
 				</form>
+
 			</span>
-			<span id="woundDamage" class="damageCircle">.</span>
+
 		</div>
 			<!--WOUND END -->
 			
-		<div class="divider"></div>	
-		
+	<div class="divider"></div>
+	
 		<div id="shielder" class="widther">
 		  <p>🛡️ Shield</p>
-		  <button id="shieldAdd" class="btn">+</button>
-		  <button id="shieldSubtract" class="btn">-</button>
-		  <span id="shieldDamage" class="damageCircle">.</span>
+		  <button id="shieldAdd" class="btn shieldClickColor">🠹</button>
+		  <button id="shieldSubtract" class="btn shieldClickColor">🠻</button>
+		  <span id="shieldDamage" class="damageCircle shieldColor">.</span>
 		</div>
-					
-		<div class="divider"></div>	
 		
+	<div class="divider"></div>
+	
 		<div id="attacker" class="widther">
-		  <p>⚔️ Attack</p>
-		  <button id="attackAdd" class="btn">+</button>
-		  <button id="attackSubtract" class="btn">-</button>
+		  <p>🗡️ Attack</p>
+		  <button id="attackAdd" class="btn">🠹</button>
+		  <button id="attackSubtract" class="btn">🠻</button>
 		  <span id="attackDamage" class="damageCircle">.</span>
-		  <span id="toggler">
+		 <!-- <span id="toggler">
 				<form>
 				  <label for="poisonActive" class="labeler" id="poisonHurts">☠️</label>
-				<!-- Rounded switch -->
 				<label class="switch">
 				  <input type="checkbox" id="poisonSwitch" >
 				  <span id="opacityP" class="slider round opac"></span>
 				</label>
 				<span id="poisonDMGcount" class="blockyCount">1</span>
 				</form>
-			</span>
+			</span> ->
 
 		</div>
 			<!--ATTACK END -->
 			
-		<div class="divider"></div>	
-		
-		<div id="resolver" class="widther">
-			<button id="resolve" class="resolverBtn">Resolve</button>
-			<span class="blockyCount">🤕</span>
-			<span id="damageFinal" class="blockyCount"></span>
-			<button id="resetAll">Reset</button>
+	<div class="divider"></div>
+	
+		<div id="poisoner" class="widther">
+			  <p>☠️ Poison</p>
+			  <span id="toggler">
+				<form>
+				  <label for="poisonActive" class="labeler" id="poisonHurts"></label>
+				<!-- Rounded switch -->
+				<label class="switch">
+				  <input type="checkbox" id="poisonSwitch" >
+				  <span id="opacityP" class="slider round opac poisonIcon sliderPoisonColor"></span>
+				</label>
+				<span id="poisonDMGcount" class="damageCircle poisonColor">.</span>
+				</form>
+			</span>
 		</div>
+	
+	<div class="divider"></div>
+	
+		<div id="modifier" class="widther">
+			<p>⚔️ Modify</p>
+			<!--<button id="attackAdd" class="btn stack">🠹</button>
+			<button id="attackSubtract" class="btn stack">🠻</button>-->
+			<button id="attackMultiply" class="btn modifyClickColor opac">x2</button>
+			<button id="attackNull" class="btn modifyClickColorNull opac"><img src="images/crossOut.svg" id="svgIcons" class="insideBtn" ></button>
+			<span id="modifyDamage" class="damageCircle">.</span>
+		</div>
+	
+	<div class="divider"></div>
+	
+	<div id="resolver" class="widther">
+			<p>🤕 Resolve</p>
+			<button id="resolve" class="btn resolverBtn">Resolve</button>
+			<span id="damageFinal" class="damageCircle">.</span>
+		</div>
+		
+	<div class="divider"></div>
+	
 		<div id="overview" class="widther">
 			<span id="damageTotaler" class="blockyCount">0</span>
 			<span id="totalPSN" class="buff">Poison 0</span>
 			<span id="totalWND" class="buff">Wound 0</span>
 			<span id="totalATK" class="buff">Attack 0</span>
 			<span id="totalSHLD" class="buff">Shield 0</span>
+			<button id="resetAll">Reset</button>
 		</div>
 	  
 		<!-- JAVASCRIPT -->
