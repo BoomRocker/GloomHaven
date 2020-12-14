@@ -92,7 +92,7 @@ body{
 	margin:0;
 }
 
-.btn:active{
+.btn:active, .btn:hover{
 	outline: auto;
 	background:#93292e;
 	color:#fff;
@@ -101,29 +101,27 @@ body{
 .btn.modifyClickColor{
 	font-size:20px;
 	color:black;
-	font-weight:bold;
 	font-family: 'Pirata One', cursive;
 }
 
-.btn:active.shieldClickColor{
+.btn:active.shieldClickColor, .btn:hover.shieldClickColor{
 	background-color:#2d4567 !important;
+	color:#fff;
 }
 
-.btn:active.modifyClickColor{
+.btn:active.modifyClickColor, .btn:hover.modifyClickColor{
 	background-color:#7e57a6 !important;
 	font-size:20px;
 	color:black;
 	font-family: 'Pirata One', cursive;
 }
 
-.btn:active.modifyClickColorNull{
+.btn:active.modifyClickColorNull, .btn:hover.modifyClickColorNull{
 	background-color:#ffb600 !important;
 }
 
-.btn:active.modifyClickColor{
-	font-size:30px;
-	color:black;
-	font-weight:bold;
+.btn:active.modifyClickColor, .btn:hover.modifyClickColor{
+	color:#fff;
 	font-family: 'Pirata One', cursive;
 }
 
@@ -464,7 +462,7 @@ input:focus + .slider, input:hover {
 	margin: 1px 0 0 15px;
 	padding:0 ;
 	font-weight:bold;
-	color:#ecd977;
+	color:#f9e05e;
 	font-size:50px;
 	background:none;
 	text-shadow: 2px 2px 3px black;
