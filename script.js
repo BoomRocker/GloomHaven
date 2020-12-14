@@ -28,10 +28,10 @@
 		window.alert("Run the Page GITHUB");
 		displayFinalDamage= woundFinal + poisonFinal + shieldAttackResolve;
 
-			document.getElementById("totalWND").innerHTML="wound "+countW;
-			document.getElementById("totalATK").innerHTML="attack "+countA;
-			document.getElementById("totalSHLD").innerHTML="shield "+countS;
-			document.getElementById("totalPSN").innerHTML="poison "+countP;
+			document.getElementById("totalWND").innerHTML="wnd "+countW;
+			document.getElementById("totalATK").innerHTML="atk "+countA;
+			document.getElementById("totalSHLD").innerHTML="shld "+countS;
+			document.getElementById("totalPSN").innerHTML="psn "+countP;
 			
 			document.getElementById("attackNull").disabled = true;
 			document.getElementById("poisonSwitch").disabled = true;
@@ -207,8 +207,8 @@
 			var countWP = Math.max(0,countW+countP);
 			var countAS = Math.max(0,countA-countS);
 			document.getElementById("damageFinal").innerHTML=countWP+countAS;
-			document.getElementById("totalWND").innerHTML="wound "+countW;
-			document.getElementById("totalATK").innerHTML="attack "+countA;
-			document.getElementById("totalSHLD").innerHTML="shield "+countS;
-			document.getElementById("totalPSN").innerHTML="poison "+countP;
+			document.getElementById("totalWND").innerHTML="WND "+countW;
+			document.getElementById("totalATK").innerHTML="ATK "+countA;
+			document.getElementById("totalSHLD").innerHTML="SLD "+countS;
+			document.getElementById("totalPSN").innerHTML="PSN "+countP;
 		}
