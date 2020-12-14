@@ -57,10 +57,10 @@ body{
 
 .buff{
 	display:inline-block !important;
-	font-size:12px;
-	padding: 5px;
-	margin:5px;
-	font-weight:bold;
+	font-size:20px;
+	padding: 1px;
+	margin:1px;
+	font-weight:normal;
 	clear:none;
 }
 
@@ -136,7 +136,9 @@ body{
 }
 
 .insideBtnWhite{
+	display:inline-block !important;
 	position:relative;
+	float:right;
 	width:23px;
 	height:23px;
 	padding:0 0 2px 0;
@@ -145,17 +147,19 @@ body{
 
 .resolverBtn {
 	display:inline-block !important;
-    width:105px;
-	font-size:18px;
+    width:125px;
+	font-size:25px;
 	text-align:center;
 	float:left;
-	background-color:purple;
+	background-color: rgba(0, 0, 0, 0.5);;
 	color:white;
 	font-family: 'Pirata One', cursive;
+	padding:0;
+	margin:0 5px 0 0;
 }
 
 .resolverBtn:active {
-	background:red;
+	background:  rgba(155, 16, 13, 0.5);;
 }
 
 #poisonHurts{
@@ -164,14 +168,12 @@ body{
 
 #overview{
 	border:0;
-	margin:0;
+	margin:26px 0 0 0;
 	padding:0;
+	color:#804d2e;
 }
 
-#resolver{
 
-	padding: 0 0 5px 0 ;
-}
 
 .damageCircle{
 	float:left;
@@ -230,14 +232,20 @@ body{
 #shieldDamage{
 }
 
-#resolver{
-	background: rgba(0, 0, 0, 0.5);
-}
-
-#wounder, #attacker, #poisoner,#shielder, #modifier, #resolver{
+#wounder, #attacker, #poisoner,#shielder, #modifier{
 	padding:0 0 0 0;
 	margin:0 0 0 0;
 	width:100%;
+}
+
+#resolver{
+	padding: 15px 0 0 0 ;	
+	margin:0;
+	width:100%;
+}
+
+p.resolved{
+	color:#fff;
 }
 
 .divider{
@@ -283,14 +291,13 @@ body{
 	float: left;
 	clear:none;
 	width: auto;
-	background:blue;
-	color: yellow;
-	height:40px;
-	font-size:15px;
-	border-radius:5px;
-	border: 2px solid yellow;
-	margin: 5px 0 0 10px ;
-	padding:0 10px;
+	background:none;
+	height:30px;
+	width: 30px;
+	font-size:12px;
+	border: 0px solid #fff;
+	margin: 18px 0 0 32px ;
+	padding:0;
 	font-family: 'Pirata One', cursive;
 }
 
@@ -444,4 +451,12 @@ input:focus + .slider, input:hover {
 
 .poisonIcon{
 	  content: "☠️";
+}
+
+.resolvedFinal{
+	margin: -5px 0 0 48px;
+	padding:0 ;
+	color:red;
+	font-size:50px;
+	background:none;
 }
