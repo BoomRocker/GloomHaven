@@ -456,11 +456,11 @@ input:focus + .slider, input:hover {
 }
 
 .resolvedFinal{
-	margin: 0 0 0 12px;
+	margin: 2px 0 0 12px;
 	padding:0 ;
 	font-weight:bold;
-	color:#ffffff;
+	color:#ecd977;
 	font-size:50px;
 	background:none;
-	text-shadow: 4px 0 #000, 0 4px #000, 4px 0 #000, 0 4px #000;
+	text-shadow: 2px 2px 3px black;
 }
