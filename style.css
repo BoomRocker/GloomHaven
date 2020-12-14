@@ -12,7 +12,7 @@ body{
 	background: url("./images/backer3.png") left top no-repeat; 
 	background-size: 400px;
 	width:300px;
-	height: 575px;
+	height: 510px;
 	padding:60px 50px 0 50px;
 	margin:0;
 	border:1px solid yellow;
@@ -151,12 +151,13 @@ body{
     width:125px;
 	font-size:25px;
 	text-align:center;
-	float:left;
+	float:right;
 	background-color: rgba(0, 0, 0, 0.5);;
 	color:white;
 	font-family: 'Pirata One', cursive;
 	padding:0;
-	margin:0 5px 0 0;
+	margin:7px 0px 0 0;
+	border:2px solid #ecd977;
 }
 
 .resolverBtn:active {
@@ -171,7 +172,7 @@ body{
 	border:0;
 	margin:26px 0 0 0;
 	padding:0;
-	color:#804d2e;
+	color:#000;
 }
 
 
@@ -297,7 +298,7 @@ p.resolved{
 	width: 30px;
 	font-size:12px;
 	border: 0px solid #fff;
-	margin: 18px 0 0 32px ;
+	margin: 20px 30px 0 0 ;
 	padding:0;
 	font-family: 'Pirata One', cursive;
 }
@@ -455,9 +456,11 @@ input:focus + .slider, input:hover {
 }
 
 .resolvedFinal{
-	margin: -5px 0 0 48px;
+	margin: 0 0 0 12px;
 	padding:0 ;
-	color:red;
+	font-weight:bold;
+	color:#ffffff;
 	font-size:50px;
 	background:none;
+	text-shadow: 4px 0 #000, 0 4px #000, 4px 0 #000, 0 4px #000;
 }
