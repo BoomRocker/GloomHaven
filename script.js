@@ -25,7 +25,7 @@
 	}
 
 	window.onload = function(){
-		window.alert("Run the Page GITHUB");
+		/*window.alert("Run the Page GITHUB");*/
 		displayFinalDamage= woundFinal + poisonFinal + shieldAttackResolve;
 
 			document.getElementById("totalWND").innerHTML="wnd "+countW;
