@@ -7,13 +7,24 @@
 	  <link rel="apple-touch-icon" href="./images/fave.jpg">
 	  
 		<meta name="apple-mobile-web-app-capable" content="yes">
-		<!--<meta name="viewport" content="width=device-width,initial-scale=.95,user-scalable=no">-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.5, maximum-scale=1.5,user-scalable=no"/>
-	
+		<!--<meta name="viewport" content="width=device-width,initial-scale=.95,user-scalable=no">-->	
 	  <link rel="stylesheet" href="./style.css">
 		<style>
 		@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 		</style>
+		
+		<!-- in head -->
+		<meta id="viewport" name='viewport'>
+		<script>
+			(function(doc) {
+				var viewport = document.getElementById('viewport');
+				if ( navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i)) {
+					viewport.setAttribute("content", "width=device-width,initial-scale=.95,user-scalable=no");
+				} else if ( navigator.userAgent.match(/iPad/i) ) {
+					viewport.setAttribute("content", "width=device-width,initial-scale=1.5,user-scalable=no");
+				}
+			}(document));
+		</script>
 		
 	</head>
 	<body>
