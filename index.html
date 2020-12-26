@@ -13,6 +13,15 @@
 		<style>
 		@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 		</style>
+		
+		<script>
+			$(document).ready(function(){
+				if (screen.width > 767) {
+                        var viewportContent = "width=device-width, maximum-scale=1, initial-scale=1.5";                            
+                        document.getElementById('viewport').setAttribute('content', viewportContent);                         
+					}
+			});
+		</script>
 	</head>
 	<body>
 
